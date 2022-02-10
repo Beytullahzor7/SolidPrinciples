@@ -1,0 +1,2 @@
+Bir sınıf ya da fonksiyon halihazırda var olan özelliklerikorumalı ve değişikliğe izin vermemelidir.
+Yani davranışını değiştirmiyor olmalı ve yeni özellikler kazanabiliyor olmalıdır.

@@ -1,0 +1,17 @@
+Sınıflar arası bağımlılıklar olabildiğince az olmalıdır özellikle
+üst seviye sınıflar alt seviye sınıflara bağımlı olmamalıdır.
+
+Üst seviye (High-Level) sınıflar alt seviye (Low-Level) sınıflara bağlı olmamalıdır,
+ilişki abstraction veya interface kullanarak sağlanmalıdır,
+
+Abstraction(soyutlama) detaylara bağlı olmamalıdır, tam tersi detaylar abstraction(soyutlama)’lara bağlı olmalıdır.
+
+Genel olarak geliştirilen uygulamalarda, üst seviyeli
+işlem yapan metodlar alt seviyeli işlem yapan metodlara bağımlıdır.
+Yani o metodları çağırırlar. Bu durum iyi değildir.
+Çünkü, alt seviye işlem yapan metodlar alt seviyede bulunan metodlar değişiklik
+gerektireceğinden dolayı, üst seviye metodlar da değişikliğe uğramak zorunda kalır.
+Aynı şekilde üst seviyeli işlem yapan bir metotta yapacağımız bir değişiklik, bağlı olduğu
+tüm metodların değişmesini gerektirir. Birbirine bu kadar sıkı bağlı metodların bulunduğu bir
+projede tekrar kullanılabilirlik imkansız gibidir. Yani yapılan küçük bir değişikliği başka bir
+projede tekrar kullanmak istediğimizde birçok sınıfı projeye referans vermek zorunda kalırız

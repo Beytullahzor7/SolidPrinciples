@@ -1,0 +1,3 @@
+Kodlarımızda herhangi bir değişiklik yapmaya gerek duymadan alt sınıfları,
+türedikleri(üst) sınıfların yerine kullanabilmeliyiz.
+Bir classta bulunan özellikler, kendisinden kalıtım alan classlarda kullanılmayacaksa bu durum LSP’ye aykırı bir durumdur.
